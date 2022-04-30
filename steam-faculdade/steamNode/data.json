@@ -1,0 +1,85 @@
+{
+  "Shop": {
+    "weekHighLightGames": [
+      {
+        "_id": "ObjectId(309f5bd1-be64-49a2-8489-37eb0c88137a)",
+        "nome": "Counter-Strike: Global Offensive",
+        "preco": 25.99,
+        "dt_lancamento": "21-08-2012",
+        "generos": ["tiro", "multiplayer", "competitivo"],
+        "descricao": "O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás."
+      }
+    ]
+  },
+
+  "Games": [
+    {
+      "_id": "ObjectId(309f5bd1-be64-49a2-8489-37eb0c88137a)",
+      "nome": "Counter-Strike: Global Offensive",
+      "preco": 25.99,
+      "dt_lancamento": "21-08-2012",
+      "generos": ["tiro", "multiplayer", "competitivo"],
+      "descricao": "O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás."
+    },
+    {
+      "_id": "ObjectId(c0825595-6786-4cc7-aedc-477c9972eb3a)",
+      "nome": "Dead by Daylight",
+      "preco": 45.99,
+      "dt_lancamento": "14-08-2016",
+      "generos": ["terror", "multiplayer", "sobrevivencia"],
+      "descricao": "O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás."
+    }
+  ],
+
+  "Friends": [
+    {
+      "_id": "ObjectId(ed76e85e-0534-451e-8bea-124fdd7ac4b3)",
+      "nome": "Lucas",
+      "status": "offline",
+      "jogando": null
+    },
+    {
+      "_id": "ObjectId(f3192b1e-9728-4a89-bb9d-02216f130c1b)",
+      "nome": "Jonas",
+      "status": "online",
+      "jogando": "Counter-Strike: Global Offensive"
+    },
+    {
+      "_id": "ObjectId(73c0e1de-5f95-4be9-a9cd-a6af5225d7b7)",
+      "nome": "Larissa",
+      "status": "online",
+      "jogando": "Dead by Daylight"
+    }
+  ],
+
+  "ShoppingCart": [
+    {
+      "_id": "ObjectId(b7085dc2-f7cc-4dab-ae26-02baa54187b7)",
+      "userId": "ObjectId(bf976725-6f86-4923-94ba-dab2721f0f42)",
+      "games": [
+        {
+          "id": "c0825595-6786-4cc7-aedc-477c9972eb3a",
+          "nome": "Dead by Daylight",
+          "preco": 45.99,
+          "dt_lancamento": "14-08-2016",
+          "generos": ["terror", "multiplayer", "sobrevivencia"],
+          "descricao": "O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás."
+        }
+      ]
+    },
+    {
+      "_id": "ObjectId(b7085dc2-f7cc-4dab-ae26-02baa54187b7)",
+      "userId": "ObjectId(bf976725-6f86-4923-94ba-dab2721f0f42)",
+      "games": [
+        {
+          "id": "309f5bd1-be64-49a2-8489-37eb0c88137a",
+          "nome": "Counter-Strike: Global Offensive",
+          "preco": 25.99,
+          "dt_lancamento": "21-08-2012",
+          "generos": ["tiro", "multiplayer", "competitivo"],
+          "descricao": "O Counter-Strike: Global Offensive (CS:GO) expande a jogabilidade de ação baseada em equipas introduzida pelo primeiro jogo da série cerca de 20 anos atrás."
+        }
+      ]
+    }
+  ]
+}

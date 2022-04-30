@@ -1,0 +1,36 @@
+{
+  "name": "steam-node-fiap",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --clear --exit-child   --inspect --respawn --transpile-only --ignore-watch node_modules  src/server.ts",
+    "schema": "db/schema.prisma"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/infoSeeds.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "3.12.0",
+    "@types/node": "^17.0.23",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.5.0",
+    "prisma": "^3.12.0",
+    "ts-node": "^10.7.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
+}

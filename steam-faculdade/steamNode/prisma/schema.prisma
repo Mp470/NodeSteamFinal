@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Loja {
+
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  destaquesDaSemana String[]
+  createdAt         DateTime @default(now())
+}
+
+model Carrinho {
+
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String
+  total     String
+  createdAt DateTime @default(now())
+  jogos     String[]
+}
+
+model Jogos {
+
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  titulo        String
+  capa          String
+  photos        String[]
+  preco         Float
+  dt_lancamento DateTime
+  generos       String[]
+  descricao     String
+  createdAt     DateTime @default(now())
+}
+
+model Amigos {
+
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  avatar    String
+  nome      String
+  isOnline  Boolean
+  playing   String
+  createdAt DateTime @default(now())
+
+}
+
+model Usuario {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  nome           String
+  amigos         String[]
+  jogosComprados String[]
+}
